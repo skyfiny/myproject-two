@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	background-color: #F7F5F5;
+}
+
+.one {
+	margin: 0 auto;
+	height: 380px;
+	width: 1160px;
+	overflow: hidden;
+	position: relative;
+	
+
+}
+
+.one ul {
+	height: 160px;
+	width: 100000px;
+	position: absolute;
+	left: 0;
+}
+
+/*ul width的宽不能过小*/
+.one ul li {
+	display: block;
+	float: left;
+	margin: 5px;
+	height: 346px;
+	border-radius: 5px;
+	position: relative;
+	background: #fff;
+}
+
+.one ul li a {
+	display: inline-block;
+	height: 330px;
+}
+
+.one ul li img {
+	border-radius: 5px;
+	display: block;
+	height: 270px;
+	width: 260px;
+}
+
+
+.one h3 {
+	font-size: 16px;
+	text-align: center;
+	color: #333;
+}
+
+.one p {
+	font-size: 14px;
+	color: #999;
+	margin-bottom: 5px;
+	padding-left: 8px;
+}
+
+
+.two {
+	margin: 50px auto;
+	height: 90px;
+	width: 1000px;
+	overflow: hidden;
+	position: relative;
+}
+
+.two ul {
+	height: 90px;
+	width: 100000px;
+	position: absolute;
+	left: 0;
+}
+
+/*ul width的宽不能过小*/
+.two ul li {
+	display: block;
+	float: left;
+	margin: 5px;
+	height: 80px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.two ul li a {
+	display: inline-block;
+	height: 80px;
+}
+
+.two ul li img {
+	display: block;
+	border-radius: 5px;
+	height: 80px;
+}
+
+.two ul li a span {
+	height: 0;
+	display: block;
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	font-size: 0px;
+}
+
+.two ul li a:hover span {
+	height: 80px;
+	line-height: 80px;
+	font-size: 20px;
+	text-align: center;
+	transition: all 0.7s;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注冊</title>
+		<link rel="stylesheet" href="css/register.css" />
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<style type="text/css">
+			.remain {
+				width: 400px;
+				height: 50px;
+				line-height: 50px;
+				background: rgba(0, 0, 0, 0.7);
+				position: fixed;
+				top: 50px;
+				left: 50%;
+				margin-left: -200px;
+				z-index: 99999;
+				color: #fff;
+				text-align: center;
+				display: none;
+			}
+			.wel{
+				color: #fff;
+				padding-top: 30px;
+				text-align: center;
+				opacity: .7;
+			}
+			button:hover {background-color:royalblue}
+			button:active {
+				background-color:royalblue;
+				transform: translateY(4px);
+			}
+			input::-webkit-input-placeholder{
+				color:#fff;
+			}
+			input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+				color:#fff;
+			}
+			input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+				color:#fff;
+			}
+			input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+				color:#fff;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="remain">131</div>
+	<div class="box">
+			<h1 class="wel">W e l c o m e ！</h1>
+		<div class="regform2">
+			<div>
+				<p><input type="text" placeholder="请输入用户名" id="username"></p>
+				<p><input type="password" placeholder="请输入密码" id="pwd" /></p>
+			</div>
+			<div>
+				<p><input type="password" placeholder="请输入确认密码" id="pwd2"></p>
+				<p><input type="tel" placeholder="请输入手机号" id="tell" /></p>
+			</div>
+			<div>
+				<p><input type="email" placeholder="请输入邮箱" id="email" /></p>
+			</div>
+			<p class="regbtn"><button>注册</button></p>
+		</div>
+	</div>
+
+		<script>
+			function alertMessage() {
+				$(".remain").fadeIn();
+				setTimeout(() => {
+					$(".remain").fadeOut();
+				}, 3000)
+			}
+
+			var check = {
+				username: false,
+				pwd: false,
+				pwd2: false,
+				tell: false,
+				email: false,
+				agree: false
+			};
+			//1、验证用户名
+			$('#username').on('blur', function() {
+				var username = $(this).val()
+				var rename = new RegExp(/^[a-zA-Z]+[a-zA-Z0-9_]*$/gi);
+				// 验证 用户名是否刚好匹配
+				var isname = rename.test(username);
+				if ((username.length < 6 || username.length > 18)) {
+					$(this).parent().css('border-color', "#f00");
+					check.username = false;
+					$(".remain").text("用户名长度为6-18位")
+					alertMessage()
+					return false
+				} else if ((username.length > 6 || username.length < 18) && isname == true) {
+					if (username == "") {
+						$(".remain").text("用户名有误")
+						alertMessage()
+					} else {
+						$(this).parent().css('border-color', "#0a0");
+						check.username = true;
+					}
+				} else {
+					$(".remain").text("用户名由数字,字母，下划线，且以字母开头")
+					alertMessage()
+				}
+			});
+			//2、验证密码是否达6位数
+			$('#pwd').on('blur', function() {
+				if ($(this).val().length < 6 || $(this).val().length > 16) {
+					$(this).parent().css('border-color', "#f00");
+					check.pwd = false;
+					$(".remain").text("密码长度为6-16位")
+					alertMessage()
+				} else {
+					if ($(this).val() == "") {
+						$(".remain").text("请输入密码")
+						alertMessage()
+					} else {
+						$(this).parent().css('border-color', "#0a0");
+						check.pwd = true;
+					}
+				}
+			});
+			//3、确认密码框与密码框的值相同 
+			$('#pwd2').on('blur', function() {
+				if ($(this).val() !== $('#pwd').val() || $(this).val().length < 6) {
+					$(this).parent().css('border-color', "#f00");
+					check.pwd2 = false;
+					setTimeout(() => {
+						$(".remain").text("两次输入密码不一致")
+						alertMessage()
+					}, 100)
+				} else {
+					$(this).parent().css('border-color', "#0a0");
+					check.pwd2 = true;
+				}
+			});
+			//4、手机号验证
+			$('#tell').on('blur', function() {
+				var tel = $(this).val();
+				//定义手机验证正则表达式
+				var reg = /^1[3456789]\d{9}$/;
+				if (!reg.test(tel)) {
+					$(this).parent().css('border-color', "#f00");
+					check.tell = false;
+					$(".remain").text("手机号格式有误")
+					alertMessage()
+				} else {
+					$(this).parent().css('border-color', "#0a0");
+					check.tell = true;
+				}
+			});
+			//5.邮箱验证
+			$('#email').on('blur', function() {
+				var email = $(this).val();
+				//定义手机验证正则表达式
+				var reg = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
+				if (!reg.test(email)) {
+					$(this).parent().css('border-color', "#f00");
+					check.email = false;
+					$(".remain").text("邮箱格式有误")
+					alertMessage()
+				} else {
+					$(this).parent().css('border-color', "#0a0");
+					check.email = true;
+				}
+			});
+			var check = {
+				username: false,
+				pwd: false,
+				pwd2: false,
+				tell: false,
+				email: false
+			};
+			$(".regbtn").click(function() {
+				if (check.username && check.pwd && check.pwd2 && check.tell && check.email) {
+					var username = $("#username").val()
+					var password = $("#pwd").val()
+					localStorage.setItem("username", username)
+					localStorage.setItem("password", password)
+					$(".remain").text("注册成功")
+					alertMessage()
+					setTimeout(() => {
+						location.href = "index.html"
+					}, 2000)
+				} else {
+					$(".remain").text("输入信息有误")
+					alertMessage()
+				}
+			})
+		</script>
+	</body>
+</html>

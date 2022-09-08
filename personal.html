@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>个人中心</title>
+
+    <link href="css/blog.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+
+    <!-- All Vendor & plugins CSS include -->
+    <link href="assets/css/vendor.css" rel="stylesheet">
+    <!-- Main Style CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- header middle area start -->
+<div class="header-main-area sticky">
+    <div class="container">
+        <div class="row align-items-center position-relative">
+
+            <!-- start logo area -->
+            <div class="col-lg-3">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>雷神科技</h1>
+                    </a>
+                </div>
+            </div>
+            <!-- start logo area -->
+
+            <!-- main menu area start -->
+            <div class="col-lg-6 position-static">
+                <div class="main-menu-area">
+                    <div class="main-menu">
+                        <!-- main menu navbar start -->
+                        <nav class="desktop-menu">
+                            <ul>
+                                <li class="active"><a href="index.html">首页 <i class="fa fa-angle-down"></i></a>
+                                </li>
+                                <li class="static"><a href="productall.html">电脑 <i class="fa fa-angle-down"></i></a>
+                                </li>
+                                <li><a href="#">内设设备 <i class="fa fa-angle-down"></i></a>
+                                </li>
+                                <li><a href="#">外接设备 <i class="fa fa-angle-down"></i></a>
+                                </li>
+                                <li><a href="#">其他 <i class="fa fa-angle-down"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- main menu navbar end -->
+                    </div>
+                </div>
+            </div>
+            <!-- main menu area end -->
+
+            <!-- mini cart area start -->
+            <div class="col-lg-3">
+                <div class="header-configure-wrapper">
+                    <div class="header-configure-area">
+                        <ul class="nav justify-content-end">
+                            <li>
+                                <a href="#" class="offcanvas-btn">
+                                    <i class="lnr lnr-magnifier"></i>
+                                </a>
+                            </li>
+                            <li class="user-hover">
+                                <a href="personal.html">
+                                    <i class="lnr lnr-user"></i>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="cart.html">
+                                    <i class="lnr lnr-cart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- mini cart area end -->
+
+        </div>
+    </div>
+</div>
+
+<!-- off-canvas menu start -->
+<aside class="off-canvas-wrapper">
+    <div class="off-canvas-overlay"></div>
+    <div class="off-canvas-inner-content">
+        <div class="btn-close-off-canvas">
+            <i class="lnr lnr-cross"></i>
+        </div>
+
+        <div class="off-canvas-inner">
+            <!-- search box start -->
+            <div class="search-box-offcanvas">
+                <form>
+                    <input type="text" placeholder="Search Here...">
+                    <button class="search-btn"><i class="lnr lnr-magnifier"></i></button>
+                </form>
+            </div>
+            <!-- search box end -->
+        </div>
+    </div>
+</aside>
+<!-- off-canvas menu end -->
+
+<!-- main wrapper start -->
+<main>
+    <!-- breadcrumb area start -->
+    <hr/>
+
+    <!-- breadcrumb area end -->
+
+    <!-- my account wrapper start -->
+    <div class="my-account-wrapper section-space pb-0">
+        <div class="container">
+            <div class="section-bg-color">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- My Account Page Start -->
+                        <div class="myaccount-page-wrapper">
+                            <!-- My Account Tab Menu Start -->
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="myaccount-tab-menu nav" role="tablist">
+                                        <a href="#dashboad" class="active" data-toggle="tab"><i class="fa fa-dashboard"></i>
+                                            信息简述</a>
+                                        <a href="#orders" data-toggle="tab"><i class="fa fa-cart-arrow-down"></i>
+                                            订单</a>
+                                        <a href="#download" data-toggle="tab"><i class="fa fa-cloud-download"></i>
+                                            下载浏览</a>
+                                        <a href="#payment-method" data-toggle="tab"><i class="fa fa-credit-card"></i>
+                                         支付方式</a>
+                                        <a href="#address-edit" data-toggle="tab"><i class="fa fa-map-marker"></i>
+                                           地址</a>
+                                        <a href="#account-info" data-toggle="tab"><i class="fa fa-user"></i> 详情信息</a>
+                                        <a href="register.html"><i class="fa fa-sign-out"></i> 退出</a>
+                                    </div>
+                                </div>
+                                <!-- My Account Tab Menu End -->
+
+                                <!-- My Account Tab Content Start -->
+                                <div class="col-lg-9 col-md-8">
+                                    <div class="tab-content" id="myaccountContent">
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade show active" id="dashboad" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Dashboard</h3>
+                                                <div class="welcome">
+                                                    <p>你好, <strong>尊敬的雷神科技用户</strong> </p>
+                                                </div>
+                                                <p class="mb-0">从您的帐户仪表板。你可以很容易地检查&
+                                                    查看您最近的订单，管理您的发货和帐单地址
+                                                    并编辑您的密码和帐户详细信息.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Single Tab Content End -->
+
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade" id="orders" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Orders</h3>
+                                                <div class="myaccount-table table-responsive text-center">
+                                                    <table class="table table-bordered">
+                                                        <thead class="thead-light">
+                                                        <tr>
+                                                            <th>订单</th>
+                                                            <th>数据</th>
+                                                            <th>状态</th>
+                                                            <th>总计</th>
+                                                            <th>查看</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Aug 22, 2019</td>
+                                                            <td>Pending</td>
+                                                            <td>$3000</td>
+                                                            <td><a href="cart.html" class="btn btn__bg">View</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>July 22, 2019</td>
+                                                            <td>Approved</td>
+                                                            <td>$200</td>
+                                                            <td><a href="cart.html" class="btn btn__bg">View</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>June 12, 2019</td>
+                                                            <td>On Hold</td>
+                                                            <td>$990</td>
+                                                            <td><a href="cart.html" class="btn btn__bg">View</a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Tab Content End -->
+
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade" id="download" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Downloads</h3>
+                                                <div class="myaccount-table table-responsive text-center">
+                                                    <table class="table table-bordered">
+                                                        <thead class="thead-light">
+                                                        <tr>
+                                                            <th>产品</th>
+                                                            <th>数据</th>
+                                                            <th>Expire</th>
+                                                            <th>浏览</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>联想电脑</td>
+                                                            <td>Aug 22, 2019</td>
+                                                            <td>Yes</td>
+                                                            <td><a href="#" class="btn btn__bg"><i
+                                                                    class="fa fa-cloud-download"></i>
+                                                                Look</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>华硕键盘</td>
+                                                            <td>Sep 12, 2019</td>
+                                                            <td>Never</td>
+                                                            <td><a href="#" class="btn btn__bg"><i
+                                                                    class="fa fa-cloud-download"></i>
+                                                                Look</a></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Tab Content End -->
+
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade" id="payment-method" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Payment Method</h3>
+                                                <p class="saved-message">你还没有保存付款方式</p>
+                                            </div>
+                                        </div>
+                                        <!-- Single Tab Content End -->
+
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade" id="address-edit" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Billing Address</h3>
+                                                <address>
+                                                    <p><strong>雷神的忠实用户</strong></p>
+                                                    <p>重庆文理学院 <br>
+                                                        重庆市永川区红河大道</p>
+                                                    <p>电话: (123) 456-7890</p>
+                                                </address>
+                                                <a href="#" class="btn btn__bg"><i class="fa fa-edit"></i>
+                                                    Edit Address</a>
+                                            </div>
+                                        </div>
+                                        <!-- Single Tab Content End -->
+
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade" id="account-info" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Account Details</h3>
+                                                <div class="account-details-form">
+                                                    <form action="#">
+                                                        <div class="single-input-item">
+                                                            <label for="display-name" class="required">个性签名 </label>
+                                                            <input type="text" id="display-name" placeholder="
+                                                            "/>
+                                                        </div>
+                                                        <div class="single-input-item">
+                                                            <label for="email" class="required">名字</label>
+                                                            <input type="email" id="email" placeholder="Email Address" />
+                                                        </div>
+                                                        <fieldset>
+                                                            <legend>更改密码</legend>
+                                                            <div class="single-input-item">
+                                                                <label for="current-pwd" class="required">当前密码</label>
+                                                                <input type="password" id="current-pwd" placeholder="Current Password" />
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <div class="single-input-item">
+                                                                        <label for="new-pwd" class="required">新密码</label>
+                                                                        <input type="password" id="new-pwd" placeholder="New Password" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="single-input-item">
+                                                                        <label for="confirm-pwd" class="required">确定密码</label>
+                                                                        <input type="password" id="confirm-pwd" placeholder="Confirm Password" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                        <div class="single-input-item">
+                                                            <button class="btn btn__bg">Save Changes</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div> <!-- Single Tab Content End -->
+                                    </div>
+                                </div> <!-- My Account Tab Content End -->
+                            </div>
+                        </div> <!-- My Account Page End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- my account wrapper end -->
+</main>
+<!-- main wrapper end -->
+
+<!-- Start Footer Area Wrapper -->
+<footer class="footer-wrapper">
+
+    <!-- footer widget area start -->
+    <div class="footer-widget-area">
+        <div class="container">
+            <div class="footer-widget-inner section-space">
+                <div class="row mbn-30">
+                    <!-- footer widget item start -->
+                    <div class="col-lg-5 col-md-6 col-sm-8">
+                        <div class="footer-widget-item mb-30">
+                            <div class="footer-widget-title">
+                                <h5>My account</h5>
+                            </div>
+                            <ul class="footer-widget-body accout-widget">
+                                <li class="address">
+                                    <em><i class="lnr lnr-map-marker"></i></em>
+                                   重庆文理学院红河A区
+                                </li>
+                                <li class="email">
+                                    <em><i class="lnr lnr-envelope"></i>邮箱: </em>
+                                    <a href="mailto:test@yourdomain.com">40000000000@mail.com</a>
+                                </li>
+                                <li class="phone">
+                                    <em><i class="lnr lnr-phone-handset"></i> Phones: </em>
+                                    <a href="tel:(012)800456789-987">123456789</a>
+                                </li>
+                            </ul>
+                            <div class="payment-method">
+                                <img src="assets/img/payment-pic.png" alt="payment method">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer widget item end -->
+
+                    <!-- footer widget item start -->
+                    <div class="col-lg-2 col-md-6 col-sm-4">
+                        <div class="footer-widget-item mb-30">
+                            <div class="footer-widget-title">
+                                <h5>categories</h5>
+                            </div>
+                            <ul class="footer-widget-body">
+                                <li><a href="#">Ecommerce</a></li>
+                                <li><a href="#">shopify</a></li>
+                                <li><a href="#">Prestashop</a></li>
+                                <li><a href="#">Opencart</a></li>
+                                <li><a href="#">Magento</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- footer widget item end -->
+
+                    <!-- footer widget item start -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-widget-item mb-30">
+                            <div class="footer-widget-title">
+                                <h5>information</h5>
+                            </div>
+                            <ul class="footer-widget-body">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Exchanges</a></li>
+                                <li><a href="#">Shipping</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- footer widget item end -->
+
+                    <!-- footer widget item start -->
+                    <div class="col-lg-2 offset-lg-1 col-md-6 col-sm-6">
+                        <div class="footer-widget-item mb-30">
+                            <div class="footer-widget-title">
+                                <h5>Quick Links</h5>
+                            </div>
+                            <ul class="footer-widget-body">
+                                <li><a href="#">Store Location</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Orders Tracking</a></li>
+                                <li><a href="#">Size Guide</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- footer widget item end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer widget area end -->
+
+    <!-- footer bottom area start -->
+    <div class="footer">
+        <p class="dibu">雷神科技-2019计2-勇敢牛牛<br />201958304072马海军-201958304090舒畅-201958304091李琦</p>
+    </div>
+    <!-- footer bottom area end -->
+
+</footer>
+<!-- End Footer Area Wrapper -->
+<!-- offcanvas search form start -->
+<div class="offcanvas-search-wrapper">
+    <div class="offcanvas-search-inner">
+        <div class="offcanvas-close">
+            <i class="lnr lnr-cross"></i>
+        </div>
+        <div class="container">
+            <div class="offcanvas-search-box">
+                <form class="d-flex bdr-bottom w-100">
+                    <input type="text" placeholder="Search entire storage here...">
+                    <button class="search-btn"><i class="lnr lnr-magnifier"></i>search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- offcanvas search form end -->
+
+<!-- offcanvas mini cart start -->
+<div class="offcanvas-minicart-wrapper">
+    <div class="minicart-inner">
+        <div class="offcanvas-overlay"></div>
+        <div class="minicart-inner-content">
+            <div class="minicart-close">
+                <i class="lnr lnr-cross"></i>
+            </div>
+            <div class="minicart-content-box">
+                <div class="minicart-item-wrapper">
+                    <ul>
+                        <li class="minicart-item">
+                            <div class="minicart-thumb">
+                                <a href="product-details.html">
+                                    <img src="assets/img/cart/cart-1.jpg" alt="product">
+                                </a>
+                            </div>
+                            <div class="minicart-content">
+                                <h3 class="product-name">
+                                    <a href="product-details.html">Flowers bouquet pink for all flower lovers</a>
+                                </h3>
+                                <p>
+                                    <span class="cart-quantity">1 <strong>&times;</strong></span>
+                                    <span class="cart-price">$100.00</span>
+                                </p>
+                            </div>
+                            <button class="minicart-remove"><i class="lnr lnr-cross"></i></button>
+                        </li>
+                        <li class="minicart-item">
+                            <div class="minicart-thumb">
+                                <a href="product-details.html">
+                                    <img src="assets/img/cart/cart-2.jpg" alt="product">
+                                </a>
+                            </div>
+                            <div class="minicart-content">
+                                <h3 class="product-name">
+                                    <a href="product-details.html">Jasmine flowers white for all flower lovers</a>
+                                </h3>
+                                <p>
+                                    <span class="cart-quantity">1 <strong>&times;</strong></span>
+                                    <span class="cart-price">$80.00</span>
+                                </p>
+                            </div>
+                            <button class="minicart-remove"><i class="lnr lnr-cross"></i></button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="minicart-pricing-box">
+                    <ul>
+                        <li>
+                            <span>sub-total</span>
+                            <span><strong>$300.00</strong></span>
+                        </li>
+                        <li>
+                            <span>Eco Tax (-2.00)</span>
+                            <span><strong>$10.00</strong></span>
+                        </li>
+                        <li>
+                            <span>VAT (20%)</span>
+                            <span><strong>$60.00</strong></span>
+                        </li>
+                        <li class="total">
+                            <span>total</span>
+                            <span><strong>$370.00</strong></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="minicart-button">
+                    <a href="cart.html"><i class="fa fa-shopping-cart"></i> view cart</a>
+                    <a href="cart.html"><i class="fa fa-share"></i> checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- offcanvas mini cart end -->
+
+<!-- Scroll to top start -->
+<div class="scroll-top not-visible">
+    <i class="fa fa-angle-up"></i>
+</div>
+<!-- Scroll to Top End -->
+
+<!-- All vendor & plugins & active js include here -->
+<!--All Vendor Js -->
+<script src="assets/js/vendor.js"></script>
+<!-- Active Js -->
+<script src="assets/js/active.js"></script>
+</body>
+</html>
